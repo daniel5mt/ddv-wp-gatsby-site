@@ -1,6 +1,6 @@
 /**
- * 👋 Hey there!
- * This file is the starting point for your new WordPress/Gatsby site! 🚀
+ * Hey there!
+ * This file is the starting point for your new WordPress/Gatsby site! 
  * For more information about what this file is and does, see
  * https://www.gatsbyjs.com/docs/gatsby-config/
  *
@@ -28,7 +28,7 @@ module.exports = {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
           process.env.WPGRAPHQL_URL ||
-          `https://wpgatsbydemo.wpengine.com/graphql`,
+          `https://wp.danieldvos.com/graphql`,
       },
     },
 
