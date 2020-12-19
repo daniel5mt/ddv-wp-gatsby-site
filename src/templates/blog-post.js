@@ -19,7 +19,11 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
 
   return (
     <Layout>
-      <SEO title={post.title} description={post.excerpt} />
+      <SEO
+				title={post.title}
+				description={post.excerpt}
+				image={post.featuredImage?.node?.sourceUrl}
+			/>
 
       <article
         className="blog-post"
@@ -110,6 +114,7 @@ export const pageQuery = graphql`
               }
             }
           }
+					sourceUrl
         }
       }
     }
